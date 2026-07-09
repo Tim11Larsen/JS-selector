@@ -26,6 +26,18 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
 .img__wrapper {
     padding: 20px;
 }
@@ -46,7 +58,7 @@ h1 {
 }
 
 #search__area {
-    height: 600px;
+    height: 50vh;
     display: flex;
     align-items: center;
     margin: 0, 22px;
@@ -73,7 +85,8 @@ h1 {
 }
 
 #footer {
-    margin: 0, 22px;
+    width: 100%;
+    margin-top: 300px;
 }
 
 .logo__img--footer {
@@ -88,4 +101,23 @@ h1 {
 .footer__link {
     padding: 8px;
     font-size: 20px;
+}
+
+.movie__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+
+.movie__card--container {
+    margin: 20px;
+}
+
+.movie__card {
+    max-width: 100%;
+}
+
+.movie__poster {
+    height: 500px;
+
 }

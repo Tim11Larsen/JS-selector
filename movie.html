@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <script src="index.js"></script>
     <title>OFIDb</title>
 </head>
 <body>
@@ -32,13 +32,20 @@
 <section id="search__area">
     <div class="row">
         <div class="search__bar">
-            <input type="text" placeholder="Search for a movie..." class="search__input" id="searchInput">
-            <button class="search__button" id="searchButton">Search</button>
+            <input type="text" placeholder="Search for a movie..." class="search__input">
+            <button class="search__button">Search</button>
         </div>
-        
     </div>
+    <div class= "movie-card">
+                <div class="movie-card__container">
+                    <h3>${movie.title}</h3>
+                    <p><b>Year:</b>${movie.year}</p>
+                    <p><b>Rating:</b>${movie.rating}</p>
+                    <p><b>Release Date:</b>${movie.released}</p>
+                    <p><b>Runtime:</b>${movie.runtime}</p>
+                </div>
+            </div>
 </section>
-<div class="movie__list"></div>
 <footer>
     <div class="row">
         <div class="footer__bar">
