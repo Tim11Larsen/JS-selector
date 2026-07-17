@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/809fc9ff88.js" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
     <title>OFIDb</title>
 </head>
@@ -31,14 +32,27 @@
 </section>
 <section id="search__area">
     <div class="row">
-        <div class="search__bar">
-            <input type="text" placeholder="Search for a movie..." class="search__input" id="searchInput">
-            <button class="search__button" id="searchButton">Search</button>
+        <div class="search__row">
+            <div class="spacer"></div>
+            <div class="search__bar">
+                <input type="text" placeholder="Search for a movie..." class="search__input" id="searchInput">
+                <button class="search__button" id="searchButton">Search</button>
+            </div>
+            <div class="spacer sort__box">
+                <select id="filter" onchange="filterMovies(event)">
+                <option value="" selected disabled>Sort</option>
+                <option value="TITLE">Title</option>
+                <option value="YEAR">Year</option>
+                <option value="MEDIA">Media Type</option>
+                </select>
+            </div>
         </div>
         
     </div>
 </section>
-<div class="movie__list"></div>
+<div class="movie__list">
+    
+</div>
 <footer>
     <div class="row">
         <div class="footer__bar">
